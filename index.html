@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Form</title>
+    <style>
+      * {
+        font-family: "Ubuntu", sans-serif;
+      }
+    </style>
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+    <h1>Karan Banjade's Form</h1>
+    <hr />
+    <form action="Store.html" method="get" id="Form">
+        <div class="items">
+            <label for="First_name">Enter First Name : </label>
+            <input type="text" id="First_name" name="First_name"><br>
+            <label for="Last_name">Enter Last Name : </label>
+            <input type="text" id="Last_name" name="Last_name"><br>
+            <label for="Email">Enter Your Email : </label>
+            <input type="text" name="Email" id="Email"><br>
+            <label for="Phone">Enter Your Phone No. : </label>
+            <input type="tel" name="Phone" id="Phone"><br>
+            <label for="Gender">Enter Your Gender : </label>
+            <input type="radio" name="Gender" id="Gender" value="Male">Male &nbsp;
+            <input type="radio" name="Gender" id="Gender" value="Female">Female <br>
+            <label for="Age">Choose Your Age : </label>
+            <select name="Age" id="Age">
+                <option value="1-18"> 1 to 18</option>
+                <option value="18-45" selected> 18 to 45</option>
+                <option value="45-70"> 45 to 70</option>
+                <option value="70+"> 70+</option>
+            </select>
+            <br>
+            <label for="Agree">Do you Agree to our <a href="https://www.business-standard.com/terms-conditions">T&C</a> : </label>
+            <input type="checkbox" name="Agree" id="Agree" checked> 
+            <br>
+            <input type="Submit" value="Register">   
+        </div>
+    </form>
+  </body>
+</html>
